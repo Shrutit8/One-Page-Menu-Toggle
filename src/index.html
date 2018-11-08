@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="menu-bg"></div>
+        <div class="menu-burger">☰</div>
+        <div class="menu-items">
+            <div><a href="#">HOME</a></div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Projects</a></div>
+            <div><a href="#">Contact</a></div>
+            </div>        
+        <div class="content">
+          <h1>Consultant Company</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nisi incidunt quos iste sapiente ducimus natus perspiciatis necessitatibus voluptatibus labore dolorem at ipsa, unde quas tempora velit voluptatem rem accusamus.</p>
+          <br />
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam molestias, rerum sed pariatur dicta cum maiores autem ab possimus alias velit ducimus quibusdam inventore incidunt ullam sequi tempora, fuga perferendis.</p>  
+        </div>
+      <script src="JS/script.js"></script>
+      <script src="JS/jquery-3.3.1.min.js"></script>
+      <script>
+      $('.menu-burger, .menu-items').on('click', function() {
+    $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
+    $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
+  });</script>
+</body>
+</html>
